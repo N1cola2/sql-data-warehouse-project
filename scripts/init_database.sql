@@ -16,7 +16,7 @@ AVISO:
 USE master;
 GO
 
---Drop and recreate the 'DataWarehouse' database
+--Deleta e recria a database 'DataWarehouse'
 IF EXISTS (SELECT 1 FROM sys.databases where name ='DataWarehouse')
 BEGIN
 	ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE
